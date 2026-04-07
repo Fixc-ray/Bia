@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import AboutPage from "./About";
 import Services from "./Services";
-import { Section } from "lucide-react";
+import { Contact, Section } from "lucide-react";
 import WhyChoose from "./WhyChoose";
 import Footer from "./Footer";
 import KeySectors from "./KeySectors";
@@ -12,6 +12,7 @@ import image2 from "../Images/image2.jpeg";
 import image3 from "../Images/image3.jpeg";
 import image4 from "../Images/image4.jpeg";
 import Affiliates from "./Affiliates";
+import  ContactPage  from "./Contact";
 
 export default function Home() {
 
@@ -125,6 +126,10 @@ export default function Home() {
 
       <section>
         <WhyChoose />
+      </section>
+
+      <section>
+        <ContactPage />
       </section>
 
       {/* FOOTER */}
