@@ -6,27 +6,33 @@ import { Section } from "lucide-react";
 import WhyChoose from "./WhyChoose";
 import Footer from "./Footer";
 import KeySectors from "./KeySectors";
+import Projects from "./Projects";
+import image1 from "../Images/image1.jpeg";
+import image2 from "../Images/image2.jpeg";
+import image3 from "../Images/image3.jpeg";
+import image4 from "../Images/image4.jpeg";
+import Affiliates from "./Affiliates";
 
 export default function Home() {
 
   const slides = [
     {
-      image: "https://images.unsplash.com/photo-1509395176047-4a66953fd231",
+      image: image1,
       title: "Structuring Bankable Infrastructure",
       text: "We design financially viable projects that attract institutional capital across emerging markets."
     },
     {
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab",
+      image: image2,
       title: "Mobilizing Global Capital",
       text: "Connecting governments and developers to local and international financing solutions."
     },
     {
-      image: "https://images.unsplash.com/photo-1460472178825-e5240623afd5",
+      image: image3,
       title: "From Concept to Financial Close",
       text: "We guide projects through structuring, risk mitigation, and successful execution."
     },
     {
-      image: "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df",
+      image: image4,
       title: "Infrastructure That Drives Growth",
       text: "Energy, housing, transport, and more — building the backbone of economies."
     }
@@ -93,15 +99,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* PREVIEW */}
-          <div className="hidden md:flex flex-col items-end">
-            <img
-              src={slides[nextIndex].image}
-              className="w-28 h-36 object-cover rounded-md opacity-80 border border-gray-700"
-              alt="Next"
-            />
-          </div>
-
         </div>
       </section>
 
@@ -111,6 +108,14 @@ export default function Home() {
 
       <section>
         <Services />
+      </section>
+
+      <section>
+        <Projects />
+      </section>
+
+      <section>
+        <Affiliates />
       </section>
 
       {/* SECTORS */}
