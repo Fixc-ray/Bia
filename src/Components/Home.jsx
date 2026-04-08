@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import AboutPage from "./About";
 import Services from "./Services";
-import { Contact, Section } from "lucide-react";
 import WhyChoose from "./WhyChoose";
 import Footer from "./Footer";
 import KeySectors from "./KeySectors";
